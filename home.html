@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dynamic Tables</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="hi.png" type="image">
+
+    </head>
+    <body>
+        <!-- <h1>Using JavaScript</h1>
+        <input type="text" id="firstText" title="enter the text" >
+        <input type="submit" id="firstSubmit" value="submit" onclick="show()"> -->
+        <!-- <button onclick="table()">show table</button> -->
+        <!-- <table class="w3-table w3-bordered">
+            <tr>
+                <th>NAME :</th>
+                <td> <input type="text" id="name" title = "enter name"> </td>
+            </tr>
+            <tr>
+                <th>CAR :</th>
+                <td><input type="text" title="enter the car name" id="car"></td>
+                <th><input type="button" class="w3-button" id="add" value="ADD" onclick="addRow()" ></th>
+            </tr>
+        </table>
+        <p id="hey"></p> -->
+        <button type="button" class= "bton w3-button" id="loadData"  onclick="addRow()">Load Data</button>
+        <button type = "button" class= "btn w3-button" id="refreshData" onclick="refresh()" style="display: none;" >Refresh Data</button>
+
+        <table class="w3-table w3-bordered w3-striped" id="wholeTable">
+                <tr id="heading" style="visibility: hidden;">
+
+                <th><ins>First Name</ins></th>
+                <th><ins>Middle Name</ins></th>
+                <th><ins>Last Name</ins></th>
+                <th><ins>Email</ins></th>
+                <th><ins>Phone Number</ins></th>
+                <th><ins>Role</ins></th>
+                <th><ins>Address</ins></th>
+                <th></th>
+                <th></th>
+                  </tr>
+        
+                <tbody id="clearTable" ></tbody>
+        </table>
+        
+    </body>
+
+    <script src="logic.js"></script>
+</html>
