@@ -1,67 +1,3 @@
-// function show()
-// {
-//     let x= document.getElementById("firstText").value;
-//     let y = document.getElementById("hey")
-//     y.innerHTML=x;
-
-let data =`[
-    {
-        "first":"Kartik",
-        "middle": "" , 
-        "last" : "Grover",
-        "email": "grover@abc.com",
-        "phone": "7347666700",
-        "role" : "developer",
-        "address": "234/23"
-    },
-    {
-        "first" : "Gary",
-        "middle" : "",
-        "last" : "malhotra",
-        "email" : "gmalhotra@abc.com",
-        "phone" : "7767676769",
-        "role" : "manager",
-        "address" : "634/73"
-    },
-    {
-        "first" : "Vidyut",
-        "middle" : "",
-        "last" : "Pandita",
-        "email" : "vidyut@abc.com",
-        "phone" : "7397235927",
-        "role" : "sales",
-        "address" : "635/93"
-    },
-    {
-        "first" : "navidar",
-        "middle" : "",
-        "last" : "singh",
-        "email" : "gmalhotra@abc.com",
-        "phone" : "7767676769",
-        "role" : "manager",
-        "address" : "634/73"
-    },
-    {
-        "first" : "bulakar",
-        "middle" : "",
-        "last" : "bhagjana",
-        "email" : "gmalhotra@abc.com",
-        "phone" : "7767676769",
-        "role" : "manager",
-        "address" : "634/73"
-    },
-    {
-        "first" : "tasty",
-        "middle" : "",
-        "last" : "chicken",
-        "email" : "gmalhotra@abc.com",
-        "phone" : "7767676769",
-        "role" : "manager",
-        "address" : "634/73"
-    }
-]`
-
-let personData = JSON.parse(data);
 function addRow()
 {
     document.getElementById("loadData").style.display= 'none';
@@ -71,9 +7,9 @@ function addRow()
     for(let i = 0; i<personData.length; i++)
     {
         let r = table.insertRow();
-        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].first}</i>`;
-        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].middle}</i>`;
-        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].last}</i>`;
+        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].firstName}</i>`;
+        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].middleName}</i>`;
+        r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].lastName}</i>`;
         r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].email}</i>`;
         r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].phone}</i>`;
         r.insertCell().innerHTML = `<i class = "element${+i}">${personData[i].role}</i>`;
