@@ -10,12 +10,6 @@ function cancel(row, rowThis, data)
     changeButton.addEventListener('click', function(){
         editRecord(row);
     })
-    // changeButtonDel.onclick = function(){
-    //     deleteRecord(rowThis);
-    // }
-    // changeButton.onclick = function() {
-    //     editRecord(row);
-    // }
     for (i=0; i<7;i++)
     {
         let selectedElemets = document.getElementsByClassName("element"+row)[i];
