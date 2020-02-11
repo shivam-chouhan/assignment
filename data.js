@@ -55,4 +55,7 @@ let data =`[
     }
 ]`
 
-let personData = JSON.parse(data);
+// let personData = JSON.parse(data);
+fetch('')
+  .then(response => response.json())
+  .then(json => console.log(json))
