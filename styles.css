@@ -1,0 +1,33 @@
+.w3-button
+{
+    text-decoration: greenyellow;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 140, 255);
+    stroke-opacity: 50%;
+    border-radius: 20px;
+}
+.w3-table
+{
+    color: rgb(0, 0, 0);
+}
+.btn
+{
+    border-collapse: collapse;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 1%;
+}
+.btnf
+{
+    margin-left: 10px;
+}
+.bton
+{
+    border-collapse: collapse;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 20%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 182, 49);
+    border-radius: 20px;
+}

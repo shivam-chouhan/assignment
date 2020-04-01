@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dynamic Tables</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="hi.png" type="image">
+
+    </head>
+    <body>
+        <button type="button" class= "bton w3-button" id="loadData"  onclick="data()">Load Data</button>
+        <button type = "button" class= "btn w3-button" id="refreshData" onclick="refresh()" style="display: none;" >Refresh Data</button>
+
+        <table class="w3-table w3-bordered w3-striped" id="wholeTable">
+                <tr id="heading" style="visibility: hidden;">
+
+                <th><ins>First Name</ins></th>
+                <th><ins>Middle Name</ins></th>
+                <th><ins>Last Name</ins></th>
+                <th><ins>Email</ins></th>
+                <th><ins>Phone Number</ins></th>
+                <th><ins>Role</ins></th>
+                <th><ins>Address</ins></th>
+                <th></th>
+                <th></th>
+                  </tr>
+        
+                <tbody id="clearTable" ></tbody>
+        </table>
+        
+    </body>
+
+    <script src="addRow.js"></script>
+    <script src="data.js"></script>
+    <script src="deleteRecord.js"></script>
+    <script src="editRecord.js"></script>
+    <script src="refresh.js"></script>
+    <script src="saveRow.js"></script>
+    <script src="cancel.js"></script>
+</html>
